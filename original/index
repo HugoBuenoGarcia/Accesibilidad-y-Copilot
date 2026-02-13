@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Inicio</title>
+    <style>
+        /* Error de contraste: Texto gris claro sobre blanco */
+        body { color: #999; background: #fff; font-family: sans-serif; }
+        .btn { background: blue; color: white; padding: 10px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="banner.jpg"> <h3>Bienvenido a mi web</h3> </div>
+
+    <div class="main">
+        <p>Somos una empresa dedicada a la tecnología.</p>
+        <br>
+        <p>Para saber más <a href="about.html">haz clic aquí</a>.</p> <div class="btn" onclick="alert('Hola')">Saludar</div> 
+    </div>
+</body>
+</html>
