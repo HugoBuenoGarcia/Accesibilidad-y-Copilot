@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Empresa de Tecnología</title>
+    <style>
+        /* Estilos accesibles */
+        body {
+            color: #333;
+            background: #fff;
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Skip link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Visible focus */
+        *:focus {
+            outline: 3px solid #4A90E2;
+            outline-offset: 2px;
+        }
+        
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        header img {
+            max-width: 100px;
+            height: auto;
+        }
+        
+        header h1 {
+            margin: 0;
+            color: #333;
+        }
+        
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        p {
+            color: #333;
+            margin: 15px 0;
+        }
+        
+        a {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        
+        a:hover,
+        a:focus {
+            color: #003d82;
+            text-decoration: underline;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #0056b3;
+            color: white;
+            padding: 12px 20px;
+            border: 2px solid #0056b3;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .btn:hover,
+        .btn:focus {
+            background: #003d82;
+            border-color: #003d82;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <header>
+        <img src="banner.jpg" alt="Banner de bienvenida"> 
+        <h1>Bienvenido a mi web</h1>
+    </header>
+
+    <main id="main-content">
+        <section>
+            <p>Somos una empresa dedicada a la tecnología.</p>
+            <p>Para saber más, <a href="about.html">consulta nuestra página acerca de nosotros</a>.</p>
+            <button class="btn" onclick="alert('¡Hola! Bienvenido.')">Saludar</button>
+        </section>
+    </main>
+</body>
+</html>
