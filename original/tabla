@@ -1,0 +1,22 @@
+<html>
+<body>
+    <h2>Precios</h2>
+    <table border="1">
+        <tr>
+            <td>Producto</td>
+            <td>Precio</td>
+            <td>Stock</td>
+        </tr>
+        <tr>
+            <td>Zapatos</td>
+            <td>$50</td>
+            <td>Si</td>
+        </tr>
+        <tr>
+            <td>Camisas</td>
+            <td>$20</td>
+            <td>No</td>
+        </tr>
+    </table>
+</body>
+</html>
