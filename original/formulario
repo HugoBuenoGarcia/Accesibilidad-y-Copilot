@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Contacto</title>
+    <style>
+        /* Error crítico: Eliminar el foco visible */
+        *:focus { outline: none; } 
+    </style>
+</head>
+<body>
+    <h1>Contáctanos</h1>
+    <form>
+        <table>
+            <tr>
+                <td>Nombre:</td>
+                <td><input type="text" placeholder="Escribe tu nombre"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" placeholder="correo@ejemplo.com"></td>
+            </tr>
+        </table>
+        <img src="enviar-btn.png" onclick="submitForm()">
+    </form>
+</body>
+</html>
