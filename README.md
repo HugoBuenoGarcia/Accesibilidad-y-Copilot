@@ -11,7 +11,43 @@ This repository demonstrates the process of transforming non-accessible HTML cod
 3.  **Validation:** The code was tested before and after using industry-standard tools.
 
 ### The "Perfect Prompt" Used
-> *"Actúa como un Auditor Senior de Accesibilidad Web... [Insertar el prompt completo aquí]..."*
+> *"Actúa como un Auditor Senior de Accesibilidad Web y Desarrollador Frontend experto. Tu objetivo es refactorizar código HTML para que cumpla estrictamente con la normativa WCAG 2.2 nivel AA (y AAA donde sea posible).
+
+Analiza el código proporcionado y reescríbelo aplicando las siguientes reglas de oro, basándote en las directrices de la WAI y las mejores prácticas (estilo Olga Carreras):
+
+    Semántica sobre ARIA: Prioriza siempre elementos HTML5 nativos (<button>, <nav>, <main>, <label>) antes de usar roles ARIA. Usa ARIA solo si la semántica nativa no es suficiente.
+
+    Estructura del Documento:
+
+        Asegura una jerarquía lógica de encabezados (h1 -> h2, sin saltos).
+
+        Usa regiones semánticas (<header>, <main>, <footer>, <aside>, <nav>).
+
+    Imágenes y Medios:
+
+        Añade alt="..." descriptivo a imágenes informativas.
+
+        Usa alt="" (vacío) para imágenes puramente decorativas.
+
+    Formularios y Controles:
+
+        Cada input debe tener su <label> asociado explícitamente (for + id).
+
+        Asegura que los botones tengan texto perceptible o aria-label si son iconos.
+
+        Verifica que el foco sea visible y el orden de tabulación (tabindex) sea lógico (evita tabindex positivo).
+
+    Navegación y Enlaces:
+
+        Los textos de los enlaces deben tener sentido fuera de contexto (evita "haz clic aquí").
+
+        Implementa un enlace de "Saltar al contenido principal" (Skip link) al inicio del body si es una página completa.
+
+    Color y Contraste:
+
+        Si hay estilos en línea o CSS visible, asegura un ratio de contraste mínimo de 4.5:1 para texto normal y 3:1 para texto grande/UI.
+
+Toma el código HTML que te enviaré a continuación, analízalo paso a paso y devuélveme únicamente el código corregido seguido de una breve lista de los cambios más críticos realizados."*
 
 ### Validation Tools
 * **WAVE:** Used to visualize structural errors and contrast issues.
