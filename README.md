@@ -11,43 +11,38 @@ This repository demonstrates the process of transforming non-accessible HTML cod
 3.  **Validation:** The code was tested before and after using industry-standard tools.
 
 ### The "Perfect Prompt" Used
-> *"Actúa como un Auditor Senior de Accesibilidad Web y Desarrollador Frontend experto. Tu objetivo es refactorizar código HTML para que cumpla estrictamente con la normativa WCAG 2.2 nivel AA (y AAA donde sea posible).
+> *"Context: You are a Senior Web Accessibility Auditor and expert Frontend Developer. Your goal is to refactor HTML code so that it strictly complies with WCAG 2.2 level AA (and AAA where possible) standards.
 
-Analiza el código proporcionado y reescríbelo aplicando las siguientes reglas de oro, basándote en las directrices de la WAI y las mejores prácticas (estilo Olga Carreras):
+Instructions:
+Analyze the code provided and rewrite it applying the following golden rules, based on WAI guidelines and best practices (Olga Carreras style):
 
-    Semántica sobre ARIA: Prioriza siempre elementos HTML5 nativos (<button>, <nav>, <main>, <label>) antes de usar roles ARIA. Usa ARIA solo si la semántica nativa no es suficiente.
+    Semantics over ARIA: Always prioritize native HTML5 elements (<button>, <nav>, <main>, <label>) before using ARIA roles. Use ARIA only if native semantics are not sufficient.
 
-    Estructura del Documento:
+    Document Structure:
 
-        Asegura una jerarquía lógica de encabezados (h1 -> h2, sin saltos).
+        Ensure a logical hierarchy of headings (h1 -> h2, no skips).
 
-        Usa regiones semánticas (<header>, <main>, <footer>, <aside>, <nav>).
+        Use semantic regions (<header>, <main>, <footer>, <aside>, <nav>).
 
-    Imágenes y Medios:
+    Images and Media:
 
-        Añade alt="..." descriptivo a imágenes informativas.
+        Add descriptive alt="..." to informative images.
 
-        Usa alt="" (vacío) para imágenes puramente decorativas.
+        Use alt="" (empty) for purely decorative images.
 
-    Formularios y Controles:
+Forms and Controls:
 
-        Cada input debe tener su <label> asociado explícitamente (for + id).
+Each input must have its <label> explicitly associated (for + id).
 
-        Asegura que los botones tengan texto perceptible o aria-label si son iconos.
+        Ensure that buttons have perceivable text or aria-label if they are icons.
 
-        Verifica que el foco sea visible y el orden de tabulación (tabindex) sea lógico (evita tabindex positivo).
+Verify that the focus is visible and the tab order (tabindex) is logical (avoid positive tabindex).
 
-    Navegación y Enlaces:
+    Navigation and Links:
 
-        Los textos de los enlaces deben tener sentido fuera de contexto (evita "haz clic aquí").
+        Link texts must make sense out of context (avoid “click here”).
 
-        Implementa un enlace de "Saltar al contenido principal" (Skip link) al inicio del body si es una página completa.
-
-    Color y Contraste:
-
-        Si hay estilos en línea o CSS visible, asegura un ratio de contraste mínimo de 4.5:1 para texto normal y 3:1 para texto grande/UI.
-
-Toma el código HTML que te enviaré a continuación, analízalo paso a paso y devuélveme únicamente el código corregido seguido de una breve lista de los cambios más críticos realizados."*
+        Implement a “Skip to main content” link (Skip link) at the beginning of the body if it is a full page."*
 
 ### Validation Tools
 * **WAVE:** Used to visualize structural errors and contrast issues.
