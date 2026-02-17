@@ -71,7 +71,7 @@ Este repositorio demuestra el proceso de transformación de código HTML no acce
 3.  **Validación:** El código fue testeado antes y después usando herramientas estándar de la industria.
 
 ### El Prompt Utilizado
-(Ver sección en inglés o el archivo `prompt.txt` incluido en este repo).
+(Ver sección en inglés).
 
 ### Herramientas de Validación
 * **WAVE (Web Accessibility Evaluation Tool):** Para visualizar errores estructurales y de contraste.
