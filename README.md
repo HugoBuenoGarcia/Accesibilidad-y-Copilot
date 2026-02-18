@@ -121,6 +121,3 @@ Toma el código HTML que te enviaré a continuación, analízalo paso a paso y d
 
 ### Evidencia (Screenshots)
 Las capturas de pantalla de los informes de WAVE y Lighthouse se encuentran en la carpeta `/reports`.
-
-* [Ver Informe Antes](./reports/before-wave.png)
-* [Ver Informe Después](./reports/after-wave.png)
